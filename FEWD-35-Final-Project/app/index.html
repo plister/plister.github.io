@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Project</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+
+    <!--Need to add a Normalize.css -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <!--
+    <script src="/bower_components/modernizr/modernizr.js"></script> -->
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <nav class="navBar">
+        <div class="nav-title">
+          <div class="nav-title-home">
+            <a class="nav-title-home-link hoverBlue" href="index.html">HOME</a>
+          </div>
+        </div>
+    <!-- Just using "HOME" in larger font over on the left for now, but eventually want to add something over there like a logo or an icon that uses some of the other colors, like the light blue or the soft red. -->
+
+    <!-- John - adding multiple classes on these items really helped simplify my stylesheet and gave me a sense of how assigning one class with a specific purpose for multiple elements can make things a lot cleaner and easier -->
+
+    <!-- nav-tabs that don't go anywhere yet have alerts set up when clicked -->
+        <div class="nav-options">
+          <div class="nav-tab-1 nav-tabs">
+            <a class="nav-tab-links hoverBlue" href="index-movies.html">MOVIES</a>
+          </div>
+          <div class="nav-tab-2 nav-tabs nav-tabs-borders">
+            <a class="nav-tab-links hoverBlue" id="navTabTV" href="#">TV</a>
+          </div>
+          <div class="nav-tab-3 nav-tabs nav-tabs-borders">
+            <a class="nav-tab-links hoverBlue" id="navTabBooks" href="#">BOOKS</a>
+          </div>
+          <div class="nav-tab-4 nav-tabs nav-tabs-borders">
+            <a class="nav-tab-links hoverBlue" id="navTabComics" href="#">COMICS</a>
+          </div>
+          <div class="nav-tab-5 nav-tabs nav-tabs-borders">
+            <a class="nav-tab-links hoverBlue" id="navTabAudio" href="#">AUDIO</a>
+          </div>
+          <div class="nav-tab-6 nav-tabs nav-tabs-borders">
+            <a class="nav-tab-links hoverBlue" id="navTabContact" href="#">CONTACT</a>
+          </div>
+        </div>
+    </nav>
+
+    <section class="main">
+
+      <!-- This main section still feels a bit crowded. I'd like to play around with adding more space after the main feature, and maybe let the sidebar run longer so they're not so even. -->
+      <section class="main-feature">
+        <div class="main-feature-section">
+          <div class="main-feature-image">
+          </div>
+          <div class="main-feature-info">
+            <p class="subject-text">MOVIES</p>
+            <p class="date-text">April 29, 2017</p>
+          </div>
+          <div class="main-feature-title-container">
+            <h1 class="main-feature-title-headline hoverBlue">‘The Fate of the Furious’ delivers everything a ‘Fast’ film should— plus a giant nuclear submarine</h1>
+            <h2 class="main-feature-title-subhead">The eighth installment has insane action, family values, and (mostly) knows how to juggle its impressive cast</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- I created a breakpoint for the sidebar at 768px so that the sidebar will collapse under the main-feature article, with both sidebar items then sitting in a row next to each other as opposed to in a column. -->
+      <section class="sidebar">
+        <div class="sidebar-top">
+          <div class="sidebar-top-img">
+            <h3 class="sidebar-article-headline hoverBlue">‘Blade Runner 2049’ dreams of dystopian excellence</h3>
+          </div>
+          <div class="sidebar-top-info">
+              <div class="article-subject">
+                <p class="subject-text">MOVIES</p>
+              </div>
+              <div class="article-date">
+                <p class="date-text">October 26, 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="sidebar-bottom">
+            <div class="sidebar-bottom-img">
+              <h3 class="sidebar-article-headline hoverBlue">‘S-Town’ is a true crime narrative that explores a much more human mystery</h3>
+            </div>
+            <div class="sidebar-bottom-info">
+              <p class="subject-text">AUDIO</p>
+              <p class="date-text">April 22, 2017</p>
+            </div>
+          </section>
+
+        </section>
+
+<!-- I learned a lot about the importance of going back and refactoring working with these list sections. I initially had a lot of the element classes numbered and therefore styled individually in CSS, but when I circled back to clean things up, I found that was only necessary for the divs with images -->
+
+    <hr class="thin-rule"></hr>
+
+    <section class="list-article-homepage">
+      <div class="list-article-homepage-img-1 list-article-homepage-img-format"></div>
+      <div class="list-article-textbox">
+        <p class="subject-text">BOOKS</p>
+        <h4 class="list-article-title hoverBlue">‘Born a Crime’ by Trevor Noah is an insightful read about apartheid and identity</h4>
+        <h5 class="list-article-subhead">'The Daily Show' host's book serves as both an accessible history of apartheid in South Africa, and a personal memoir of navigating the hypocrisy of the system</h5>
+        <p class="date-text">March 18, 2017</p>
+      </div>
+    </section>
+
+    <hr class="thin-rule"></hr>
+
+    <section class="list-article-homepage">
+      <div class="list-article-homepage-img-2 list-article-homepage-img-format"></div>
+      <div class="list-article-textbox">
+        <p class="subject-text">TV</p>
+        <h4 class="list-article-title hoverBlue">The mind-bending and creative perfection of ‘Legion’</h4>
+        <h5 class="list-article-subhead">The ‘X-Men’-based series has fun with a lot of different styles and influences, but stays focused on telling its own unique story</h5>
+        <p class="date-text">May 3, 2017</p>
+      </div>
+    </section>
+
+    <hr class="thin-rule"></hr>
+
+    <section class="list-article-homepage">
+      <div class="list-article-homepage-img-3 list-article-homepage-img-format"></div>
+      <div class="list-article-textbox">
+        <p class="subject-text">MOVIES</p>
+        <h4 class="list-article-title hoverBlue">Engaging and tense, ‘Dunkirk’ captures a gripping story of survival</h4>
+        <h5 class="list-article-subhead">Christopher Nolan brings his unique aesthetic to a war film, creating an intimate and visually immersive experience</h5>
+        <p class="date-text">August 7, 2017</p>
+      </div>
+    </section>
+
+    <hr class="thin-rule"></hr>
+
+    <section class="list-article-homepage">
+      <div class="list-article-homepage-img-4 list-article-homepage-img-format"></div>
+      <div class="list-article-textbox">
+        <p class="subject-text">TV</p>
+        <h4 class="list-article-title hoverBlue">‘The Punisher’ wisely questions the root and consequences of its own violence</h4>
+        <h5 class="list-article-subhead">Marvel’s darkest series digs into way more than blood, guns, and bullets</h5>
+        <p class="date-text">December 15, 2017</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-space"></div>
+      <div class="footer-info-container" id="scrollToContact">
+        <div class="footer-info-contact-box">
+          <p class="footer-info-contact-title">CONTACT</p>
+          <p class="footer-info-contact-email">paul.a.lister1@gmail.com</p>
+        </div>
+        <div class="footer-info-follow-box">
+          <p class="footer-info-follow-title">FOLLOW</p>
+          <img class="facebook" src="images/facebook.png" alt="facebook-icon"/>
+          <img class="twitter" src="images/twitter.png" alt="twitter-icon" />
+        </div>
+      </div>
+      <div class="footer-space"></div>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js --> <!--
+    <script src="https:///bower_components/jquery/dist/jquery.js"></script> -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <!--
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  -->
+    <!-- endbuild -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- slick carousel scripts -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+    <!-- scrollTo plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
+
+<!-- chart.js is an option for data visuals;
+
+Keeping Waypoints in mind for future, but probably won't use it. Might be good to use to assign something to happen when you get to a point on a site.
+
+ -->

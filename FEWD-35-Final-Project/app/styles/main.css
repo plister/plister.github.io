@@ -1,0 +1,518 @@
+/* ***BASE STYLES*** */
+
+/*Body*/
+body {
+  margin: auto;
+  /*width: 1060px;*/
+}
+
+/*Rules*/
+.thin-rule {
+  color: var(--greyRules);
+  background-color: var(--greyRules);
+  border: none;
+  height: 1px;
+  margin: 20px auto;
+  width: 95%;
+  text-align: center;
+}
+
+/*Reused fonts*/
+.subject-text {
+  color: var(--softRed);
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.date-text {
+  color: rgba(94, 94, 94, 1);
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.list-article-title {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 1% 0;
+}
+
+.list-article-subhead {
+  color: var(--darkGrey);
+  font-family: 'Lato', 'sans-serif';
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 1%;
+}
+
+/* Adding this hoverBlue class made it way easy to target all the headlines and nav items to change color when hovering over. The idea of using multiple classes  */
+.hoverBlue:hover {
+  color: var(--lightBlue);
+  cursor: pointer;
+}
+
+/*Colors*/
+/*CSS Variables was a huge gamechanger here. Really saves the trouble of bouncing around my stylesheet to grab rgba. */
+:root {
+  --lightBlue: rgba(0, 163, 255, 1);
+  --darkBlue: rgba(1, 45, 70, 1);
+  --darkGrey: rgba(94, 94, 94, 1);
+  --greyRules: rgba(195, 199, 205, 1);
+  --darkRed: rgba(255, 25, 36, 1);
+  --softRed: rgba(213, 48, 62, .75);
+}
+
+/* *** INDEX PAGE *** */
+
+/* ***NAV SECTION*** */
+
+.navBar {
+  background-color: var(--darkBlue);
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5%;
+  margin-bottom: 3%;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+}
+
+.nav-title-home {
+  padding-left: 20%;
+}
+
+.nav-title-home-link {
+  color:  white;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-title-home-link:hover {
+  color: var(--lightBlue);
+}
+
+.nav-options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 75%;
+}
+
+.nav-tabs {
+  padding: 1%;
+  text-align: center;
+  width: 14%;
+}
+
+.nav-tabs-borders {
+  border-left-style: solid;
+  border-left-color: white;
+}
+
+.nav-tab-links {
+  color: white;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+/* ***MAIN SECTION*** */
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 3%;
+}
+
+.main-feature {
+  width: 65%;
+}
+
+/* Played around with background properties, and figured out that the top left = 0% 0% and bottom right = 100%, and can therefore position background-images based that. */
+
+.main-feature-image {
+  background-image: url("../images/F8 - submarine.jpg");
+  background-size: cover;
+  background-position: 25% 75%;
+  height: 350px;
+}
+
+.main-feature-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*Main feature fonts*/
+.main-feature-title-headline {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  padding: 1% 0;
+}
+
+.main-feature-title-subhead {
+  color: var(--darkGrey);
+  font-family: 'Lato', 'sans-serif';
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 1%;
+}
+
+
+/* ***SIDEBAR SECTION*** */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 30%;
+}
+
+/*Just to play with some features I used background blend mode and put the headlines over the images. Ultimately, probably not the best look and probably tightens up the space way more than it needs to, but just wanted to play with different layout styles. */
+
+/* Added breakpoint and included @media query specific styles at the bottom of this stylesheet*/
+
+.sidebar-top,
+.sidebar-bottom {
+  margin-bottom: 20px;
+}
+
+.sidebar-top-img {
+  background-image: url("../images/Blade-Runner-2049-1.jpg");
+}
+
+.sidebar-bottom-img {
+  background-image: url("../images/S-Town-Instagram-1.jpg");
+  }
+
+.sidebar-top-img,
+.sidebar-bottom-img {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(95, 95, 95, 0.6);
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 230px;
+}
+
+.sidebar-top-info,
+.sidebar-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.sidebar-article-headline {
+  color: white;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 5px 10px 5px;
+  text-align: center;
+}
+
+/* ***LIST ARTICLE SECTION*** */
+/*Fonts for this section were included under Base Styles at the top of the stylesheet, as they are used on both index.html and index-movies.html.*/
+
+/* Should there be a container around all of the list articles so they're grouped together? For now it seems unnecessary, but wasn't sure if there might be a need for that... */
+
+.list-article-homepage {
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-start;
+  margin: 0 3%;
+}
+
+.list-article-textbox {
+  width: 70%;
+}
+
+.list-article-homepage-img-format {
+  background-size: cover;
+  background-position: center;
+  height: 190px;
+  width: 25%;
+}
+
+.list-article-homepage-img-1 {
+  background-image: url("../images/Trevor-Noah-Born-a-Crime.jpg");
+}
+
+.list-article-homepage-img-2 {
+  background-image: url("../images/Legion-1.jpg");
+}
+
+.list-article-homepage-img-3 {
+  background-image: url("../images/dunkirk-1.jpg");
+}
+
+.list-article-homepage-img-4 {
+  background-image: url("../images/punisher-1.jpg");
+}
+
+/* ***FOOTER SECTION*** */
+
+footer {
+  background-color: var(--darkBlue);
+  margin-top: 5%;
+}
+
+.footer-space {
+  height: 20px;
+}
+
+.footer-info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-info-contact-box,
+.footer-info-follow-box {
+  text-align: center;
+  width: 50%;
+}
+
+.footer-info-follow-box {
+  border-left-style: solid;
+  border-left-color: white;
+}
+
+/*Footer Fonts*/
+.footer-info-contact-title,
+.footer-info-follow-title {
+  color: white;
+  display: block;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.footer-info-contact-email {
+  color: white;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*Social Media Icons*/
+.facebook,
+.twitter {
+  padding: 0 3% 2% 3%;
+}
+
+/* These icons are just images, so the hover doesn't work on them, but I'd like them to be responsive in some way, so I'm going to revisit this. */
+
+.facebook:hover,
+.twitter:hover {
+  color: var(--lightBlue);
+  cursor: pointer;
+}
+
+/* ***INDEX-MOVIES PAGE*** */
+/*Nav and Footer are repeated from index.html*/
+
+/*Carousel*/
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 500px;
+  margin: 0 2% 3% 2%;
+}
+
+#carousel {
+  height: 475px;
+  width: 95%;
+}
+
+.carousel-slide-img-format {
+  background-size: cover;
+  background-position: center;
+  height: 475px;
+}
+
+.carousel-slide-1 {
+  background-image: url("../images/Blade-Runner-2049-1.jpg");
+}
+
+.carousel-slide-2 {
+  background-image: url("../images/dunkirk-1.jpg");
+}
+
+.carousel-slide-3 {
+  background-image: url("../images/Star-Wars-TLJ-rey.jpg");
+}
+
+.carousel-slide-4 {
+  background-image: url("../images/disaster-artist-1.jpg");
+}
+
+.carousel-slide-5 {
+  background-image: url("../images/logan-2.jpg");
+}
+
+/*Made this container because I couldn't override "display: block" on the slides to make them flex containers. The carousel-container-overlay serves as a wrapper to put text over the carousel slides. The below is where in-slide-image text can be updated. */
+
+.carousel-container-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 475px;
+}
+
+.carousel-container-overlay-textbox {
+  background-color: rgba(95, 95, 95, 0.6);
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  width: 100%;
+}
+
+.carousel-header {
+  color: white;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  padding: 1% 2%;
+}
+
+/*Slick carousel plugin styles. Settings and documentation info at http://kenwheeler.github.io/slick/ . Slick stylesheet included and attached, but this is where settings can assigned or changed. */
+.slick-prev,
+.slick-next {
+  z-index:1000;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-dots {
+  bottom: -20;
+}
+
+/* MOVIES PAGE - LIST ARTICLES */
+
+.list-article-movies {
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-start;
+  margin: 0 3%;
+}
+
+.list-article-movies-text {
+  width: 65%;
+}
+
+/* Font styles for .list-article-title and .list-article-subhead are included above under Base Styles, as they're the same font styles for the list articles on the homepage. */
+
+.list-article-movies-img-format {
+  height: 200px;
+  width: 30%;
+}
+/*Not all the images work well as cover/center, so I set those individually below, along with each image*/
+
+.list-article-movies-img-1 {
+  background-image: url("../images/Thor-Ragnarok-1.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.list-article-movies-img-2 {
+  background-image: url("../images/Stronger-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.list-article-movies-img-3 {
+  background-image: url("../images/Wind-River-1.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.list-article-movies-img-4 {
+  background-image: url("../images/Atomic-Blonde-Theron-1.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.list-article-movies-img-5 {
+  background-image: url("../images/Spider-Man-1.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.list-article-movies-img-6 {
+  background-image: url("../images/Baby-Driver-2.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+/* Added some responsive features. As is, this is pretty imperfect in terms of following the conventions we went over in class (px vs. ems), and that being the case, I think I'd need to rework all fonts to meet the consistency necessary. Mostly, I wanted to play with collapsing the sidebar under the main featured article. */
+
+@media (max-width: 768px) {
+
+  .nav-title-home-link {
+    font-size: 22px;
+  }
+
+  .nav-tab-links {
+    font-size: 16px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main-feature {
+    width: 100%;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+    width: 100%;
+}
+
+  .sidebar-top,
+  .sidebar-bottom {
+    width: 47%;
+  }
+}
