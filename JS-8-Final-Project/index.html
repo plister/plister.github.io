@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phish Ipsum</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Permanent+Marker" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Phish Ipsum</h1>
+    <div class="form-box">
+        <form>
+                <label>How many lyrics?</label>
+                <input id="numberOfLyrics" type="number"></input>
+                <button id="jamButton" onclick="phishIpsum(event)">Let's jam!</button>
+        </form>
+    </div>
+    <div class="lyrics-container">
+        <div id="lyricsBox">
+            <span id="phishIpsumLyrics"></span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
