@@ -42,6 +42,8 @@ function phishIpsum(event) {
 
   document.getElementById("lyricsBox").style.visibility = "visible"
 }
+/*chaining addEventListener method directly to, otherwise need to set as a var */
+document.getElementById("jamButton").addEventListener("click", phishIpsum);
 
 /*Look at using .join() for formatting the lyrics
 --Can make the separator ". " 

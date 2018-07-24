@@ -29,8 +29,8 @@ body {
             ),
         url(pexels-photo.jpeg);
     background-size: auto;
-    background-position: center;
-    height: 550px;
+    background-position: top;
+    
 }
 /*grey or faded dark boards as background image?*/
 .form-box {
