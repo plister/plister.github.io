@@ -45,6 +45,8 @@ function phishIpsum(event) {
 /*chaining addEventListener method directly to, otherwise need to set as a var */
 document.getElementById("jamButton").addEventListener("click", phishIpsum);
 
+/*Maybe add css animations? Do something where the textbox opens in a more interactive way. Or maybe the button flashes differen colors? Or the background flashes a color (or a color expands out from the button to cover the screen, then shrinks back in?) */
+
 /*Look at using .join() for formatting the lyrics
 --Can make the separator ". " 
 
