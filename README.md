@@ -1,4 +1,4 @@
-FEWD 35 Final Project Overview
+FEWD 35 Final Project Overview: 
 As a final project for the Front-End Web Development course at General Assembly, I built a prototype blog site with basic functionalities and responsive features. My goal with this project was to create a website using my growing knowledge of HTML, CSS, JavaScript, and jQuery, and how to use and incorporate plugins. As I continue to learn new programming languages and JavaScript libraries I hope to build this website out into a fully functioning repository for my writing projects, using a content management system (CMS), SQL, or React. 
 
 This project was a great learning experience in terms of effectively applying these web development skills in concert with one another, and serves as a great starting point for me to continue to build on. Through developing this project, I gained a better understanding of the value of clearly structured code, the importance of refactoring, and the effectiveness of a user-centric design.
