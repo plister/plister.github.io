@@ -12,7 +12,9 @@ Functionalities
 -Plugins: By incorporating the ScrollTo and Slick Carousel plugins, I learned some of the benefits and challenges involved in using plugins. Using a plugin avoids reinventing the wheel when it comes to introducing a certain functionality, but particularly in the case of the Slick Carousel, I had to do a lot in my stylesheet to make sure it looked and worked how I wanted it.
 
 Sources
+
 -ScrollTo Plugin: http://flesler.blogspot.com/2007/10/jqueryscrollto.html
+
 -Slick Carousel Plugin: http://kenwheeler.github.io/slick/
 
 Next Steps
