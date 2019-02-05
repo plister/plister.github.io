@@ -1,5 +1,3 @@
-# plister.github.io
-
 FEWD 35 Final Project Overview
 As a final project for the Front-End Web Development course at General Assembly, I built a prototype blog site with basic functionalities and responsive features. My goal with this project was to create a website using my growing knowledge of HTML, CSS, JavaScript, and jQuery, and how to use and incorporate plugins. As I continue to learn new programming languages and JavaScript libraries I hope to build this website out into a fully functioning repository for my writing projects, using a content management system (CMS), SQL, or React. 
 
